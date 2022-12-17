@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "remote"{
-    organisation = "elevate-deop"
+    organization = "elevate-deop"
 
     workspaces {
         name = "Dec17-terraform-cloud"
