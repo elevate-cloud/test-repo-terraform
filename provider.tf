@@ -5,14 +5,13 @@ terraform {
       version = "3.36.0"
     }
   }
-}
-
-backend "remote"{
+  backend "remote"{
     organisation = "elevate-deop"
 
     workspaces {
         name = "Dec17-terraform-cloud"
     }
+  }
 }
 
 
