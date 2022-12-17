@@ -1,9 +1,9 @@
-resource "azurerm_resource_group" "example" {
+resource "azurerm_resource_group" "rg-kurs" {
   name     = var.rg_name
   location = var.location
 }
 
-resource "azurerm_storage_account" "example" {
+resource "azurerm_storage_account" "storage-kurs" {
   name                     = "tfcloudstorage0099880"
   resource_group_name      = azurerm_resource_group.example.name
   location                 = azurerm_resource_group.example.location
